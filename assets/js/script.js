@@ -371,9 +371,14 @@ $(document).ready(() => {
     //   console.log(data);
     // });
     //download(hex_filename, hex_stream);
-     $.get(backend_firmware_url + "/" + job_id + ".hex", function(data) {
-       console.log(data);
-     });
+
+    var element = document.createElement('a'); 
+    element.download = hex_filename;
+    element.href = backend_firmware_url+"/"+job_id+".hex";
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
   }
 
   function compileLayout() {
