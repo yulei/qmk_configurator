@@ -13,10 +13,11 @@ $(document).ready(() => {
   //var backend_keyboards_url = `${backend_baseurl}/v1/keyboards`;
   //var backend_compile_url = `${backend_baseurl}/v1/compile`;
   //var backend_status_url = `${backend_baseurl}/v1`;
-  var backend_baseurl = 'http://165.227.22.14:8080';
+  var backend_baseurl = 'http://www.wolfmark.club:8080';
   var backend_keyboards_url = `${backend_baseurl}/keyboards`;
   var backend_compile_url = `${backend_baseurl}/compile`;
   var backend_status_url = `${backend_baseurl}/`;
+  var backend_firmware_url = `${backend_baseurl}/firmware`;
   var backend_readme_url_template = _.template(
     `${backend_keyboards_url}/<%= keyboard %>/readme`
   );
@@ -369,7 +370,10 @@ $(document).ready(() => {
     // $.get(backend_compile_url + "/" + job_id + "/hex", function(data) {
     //   console.log(data);
     // });
-    download(hex_filename, hex_stream);
+    //download(hex_filename, hex_stream);
+     $.get(backend_firmware_url + "/" + job_id + ".hex", function(data) {
+       console.log(data);
+     });
   }
 
   function compileLayout() {
