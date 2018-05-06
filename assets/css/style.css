@@ -336,6 +336,8 @@
 
 body {
   background-image: url(wm1.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
   background-color: #fff;
   padding: 50px;
   font: 14px/1.5 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
