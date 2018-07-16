@@ -372,9 +372,9 @@ $(document).ready(() => {
     // });
     //download(hex_filename, hex_stream);
 
-    var element = document.createElement('a'); 
+    var element = document.createElement('a');
     element.download = hex_filename;
-    element.href = backend_firmware_url+"/"+job_id+".hex";
+    element.href = backend_firmware_url+"/"+job_id+".bin";
     element.style.display = 'none';
     document.body.appendChild(element);
     element.click();
