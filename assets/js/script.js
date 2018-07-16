@@ -376,7 +376,7 @@ $(document).ready(() => {
 
     var element = document.createElement('a');
     element.download = hex_filename;
-    element.href = backend_firmware_url + "/" + job_id + firmware_ext;//".bin";
+    element.href = backend_firmware_url + "/" + job_id + '.' + firmware_ext;//".bin";
     element.style.display = 'none';
     document.body.appendChild(element);
     element.click();
