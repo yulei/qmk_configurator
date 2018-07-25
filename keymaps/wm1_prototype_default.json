@@ -1,6 +1,6 @@
 {
-    "keyboard":"wm1_v2",
-    "ext":"bin",
+    "keyboard":"wm1_prototype",
+    "ext":"hex",
     "keymap":"KEYMAP_default",
     "layout":"default",
     "layers":[
