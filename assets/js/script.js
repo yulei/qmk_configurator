@@ -9,7 +9,7 @@ $(document).ready(() => {
   var status = '';
   var keyboard = '';
   var layout = '';
-  var firmware_ext = '';
+  var firmware_ext = 'bin';
   //var backend_baseurl = 'https://compile.clueboard.co';
   //var backend_keyboards_url = `${backend_baseurl}/v1/keyboards`;
   //var backend_compile_url = `${backend_baseurl}/v1/compile`;
@@ -282,7 +282,9 @@ $(document).ready(() => {
       reset_keymap();
 
       keyboard = data.keyboard;
-      firmware_ext = data.ext;
+      if (data.ext == 'hex' || data.ext == 'bin') {
+      	firmware_ext = data.ext;
+	}
       $keyboard.val(keyboard);
       setSelectWidth($keyboard);
       load_layouts($keyboard.val()).then(() => {
