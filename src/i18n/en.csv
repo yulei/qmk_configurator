@@ -57,6 +57,8 @@ layer:title,Clear Layer
 layout:label,layout
 loadDefault:label,Load Default
 loadDefault:title,Load default keymap from QMK Firmware
+connect:label,Connect
+connect:title,Connect webusb enabled keyboard
 potato:1,Henry Spalding first planted potatoes in Idaho in 1837
 potato:10,China is the world’s largest potato producer.
 potato:11,Potatoes were the first vegetable grown in space.

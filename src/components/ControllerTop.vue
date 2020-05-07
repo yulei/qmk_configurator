@@ -57,6 +57,13 @@
       </div>
       <div class="topctrl-controls">
         <button
+          id="connect"
+          v-tooltip="$t('connect.title')"
+          @click="connect"
+        >
+          {{ $t('connect.label') }}
+        </button>
+        <button
           id="load-default"
           v-tooltip="$t('loadDefault.title')"
           @click="loadDefault"
@@ -219,6 +226,12 @@ export default {
       'setFavoriteKeyboard'
     ]),
     ...mapActions('keymap', ['initTemplates']),
+    /**
+     * connect keyboard
+     */
+    connect() {
+      alert("hello webusb");
+    },
     /**
      * loadDefault keymap. Attempts to load the keymap data from
      * a predefined known file path.
