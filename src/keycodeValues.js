@@ -1,0 +1,765 @@
+/**
+ *  keycodes.js
+ */
+
+export const tmkKeycodes = {
+//HID keyboard keypad usage
+  KC_NO: 0x0000,
+  KC_ROLL_OVER: 0x0001,
+  KC_POST_FAIL: 0x0002,
+  KC_UNDEFINED: 0x0003,
+  KC_A: 0x0004,
+  KC_B: 0x0005,
+  KC_C: 0x0006,
+  KC_D: 0x0007,
+  KC_E: 0x0008,
+  KC_F: 0x0009,
+  KC_G: 0x000A,
+  KC_H: 0x000B,
+  KC_I: 0x000C,
+  KC_J: 0x000D,
+  KC_K: 0x000E,
+  KC_L: 0x000F,
+  KC_M: 0x0010,  // 0x10
+  KC_N: 0x0011,
+  KC_O: 0x0012,
+  KC_P: 0x0013,
+  KC_Q: 0x0014,
+  KC_R: 0x0015,
+  KC_S: 0x0016,
+  KC_T: 0x0017,
+  KC_U: 0x0018,
+  KC_V: 0x0019,
+  KC_W: 0x001A,
+  KC_X: 0x001B,
+  KC_Y: 0x001C,
+  KC_Z: 0x001D,
+  KC_1: 0x001E,
+  KC_2: 0x001F,
+  KC_3: 0x0020,  // 0x20
+  KC_4: 0x0021,
+  KC_5: 0x0022,
+  KC_6: 0x0023,
+  KC_7: 0x0024,
+  KC_8: 0x0025,
+  KC_9: 0x0026,
+  KC_0: 0x0027,
+  KC_ENTER: 0x0028,
+  KC_ESCAPE: 0x0029,
+  KC_BSPACE: 0x002A,
+  KC_TAB: 0x002B,
+  KC_SPACE: 0x002C,
+  KC_MINUS: 0x002D,
+  KC_EQUAL: 0x002E,
+  KC_LBRACKET: 0x002F,
+  KC_RBRACKET: 0x0030,  // 0x30
+  KC_BSLASH: 0x0031,
+  KC_NONUS_HASH: 0x0032,
+  KC_SCOLON: 0x0033,
+  KC_QUOTE: 0x0034,
+  KC_GRAVE: 0x0035,
+  KC_COMMA: 0x0036,
+  KC_DOT: 0x0037,
+  KC_SLASH: 0x0038,
+  KC_CAPSLOCK: 0x0039,
+  KC_F1: 0x003A,
+  KC_F2: 0x003B,
+  KC_F3: 0x003C,
+  KC_F4: 0x003D,
+  KC_F5: 0x003E,
+  KC_F6: 0x003F,
+  KC_F7: 0x0040,  // 0x40
+  KC_F8: 0x0041,
+  KC_F9: 0x0042,
+  KC_F10: 0x0043,
+  KC_F11: 0x0044,
+  KC_F12: 0x0045,
+  KC_PSCREEN: 0x0046,
+  KC_SCROLLLOCK: 0x0047,
+  KC_PAUSE: 0x0048,
+  KC_INSERT: 0x0049,
+  KC_HOME: 0x004A,
+  KC_PGUP: 0x004B,
+  KC_DELETE: 0x004C,
+  KC_END: 0x004D,
+  KC_PGDOWN: 0x004E,
+  KC_RIGHT: 0x004F,
+  KC_LEFT: 0x0050,  // 0x50
+  KC_DOWN: 0x0051,
+  KC_UP: 0x0052,
+  KC_NUMLOCK: 0x0053,
+  KC_KP_SLASH: 0x0054,
+  KC_KP_ASTERISK: 0x0055,
+  KC_KP_MINUS: 0x0056,
+  KC_KP_PLUS: 0x0057,
+  KC_KP_ENTER: 0x0058,
+  KC_KP_1: 0x0059,
+  KC_KP_2: 0x005A,
+  KC_KP_3: 0x005B,
+  KC_KP_4: 0x005C,
+  KC_KP_5: 0x005D,
+  KC_KP_6: 0x005E,
+  KC_KP_7: 0x005F,
+  KC_KP_8: 0x0060,  // 0x60
+  KC_KP_9: 0x0060,
+  KC_KP_0: 0x0060,
+  KC_KP_DOT: 0x0060,
+  KC_NONUS_BSLASH: 0x0060,
+  KC_APPLICATION: 0x0060,
+  KC_POWER: 0x0060,
+  KC_KP_EQUAL: 0x0060,
+  KC_F13: 0x0060,
+  KC_F14: 0x0060,
+  KC_F15: 0x0060,
+  KC_F16: 0x0060,
+  KC_F17: 0x0060,
+  KC_F18: 0x0060,
+  KC_F19: 0x0060,
+  KC_F20: 0x0060,
+  KC_F21: 0x0070,  // 0x70
+  KC_F22: 0x0070,
+  KC_F23: 0x0070,
+  KC_F24: 0x0070,
+  KC_EXECUTE: 0x0070,
+  KC_HELP: 0x0070,
+  KC_MENU: 0x0070,
+  KC_SELECT: 0x0070,
+  KC_STOP: 0x0070,
+  KC_AGAIN: 0x0070,
+  KC_UNDO: 0x0070,
+  KC_CUT: 0x0070,
+  KC_COPY: 0x0070,
+  KC_PASTE: 0x0070,
+  KC_FIND: 0x0070,
+  KC__MUTE: 0x0070,
+  KC__VOLUP: 0x0080,  // 0x80
+  KC__VOLDOWN: 0x0081,
+  KC_LOCKING_CAPS: 0x0082,
+  KC_LOCKING_NUM: 0x0083,
+  KC_LOCKING_SCROLL: 0x0084,
+  KC_KP_COMMA: 0x0085,
+  KC_KP_EQUAL_AS400: 0x0086,
+  KC_INT1: 0x0087,
+  KC_INT2: 0x0088,
+  KC_INT3: 0x0089,
+  KC_INT4: 0x008A,
+  KC_INT5: 0x008B,
+  KC_INT6: 0x008C,
+  KC_INT7: 0x008D,
+  KC_INT8: 0x008E,
+  KC_INT9: 0x008F,
+  KC_LANG1: 0x0090,  // 0x90
+  KC_LANG2: 0x0091,
+  KC_LANG3: 0x0092,
+  KC_LANG4: 0x0093,
+  KC_LANG5: 0x0094,
+  KC_LANG6: 0x0095,
+  KC_LANG7: 0x0096,
+  KC_LANG8: 0x0097,
+  KC_LANG9: 0x0098,
+  KC_ALT_ERASE: 0x0099,
+  KC_SYSREQ: 0x009A,
+  KC_CANCEL: 0x009B,
+  KC_CLEAR: 0x009C,
+  KC_PRIOR: 0x009D,
+  KC_RETURN: 0x009E,
+  KC_SEPARATOR: 0x009F,
+  KC_OUT: 0x00A0,  // 0xA0
+  KC_OPER: 0x00A1,
+  KC_CLEAR_AGAIN: 0x00A2,
+  KC_CRSEL: 0x00A3,
+  KC_EXSEL: 0x00A4,
+
+// ***************************************************************
+// These keycodes are present in the HID spec, but are           *
+// nonfunctional on modern OSes. QMK uses this range (0xA5-0xDF) *
+// for the media and function keys instead - see below.          *
+// ***************************************************************
+
+/* Modifiers */
+  KC_LCTRL: 0x00E0,
+  KC_LSHIFT: 0x00E1,
+  KC_LALT: 0x00E2,
+  KC_LGUI: 0x00E3,
+  KC_RCTRL: 0x00E4,
+  KC_RSHIFT: 0x00E5,
+  KC_RALT: 0x00E6,
+  KC_RGUI: 0x00E7,
+
+// **********************************************
+// * 0xF0-0xFF are unallocated in the HID spec. *
+// * QMK uses these for Mouse Keys - see below. *
+// **********************************************
+
+/* Media and Function keys */
+/* Generic Desktop Page (0x01) */
+  KC_SYSTEM_POWER: 0x00A5,
+  KC_SYSTEM_SLEEP: 0x00A6,
+  KC_SYSTEM_WAKE: 0x00A7,
+
+/* Consumer Page (0x0C) */
+  KC_AUDIO_MUTE: 0x00A8,
+  KC_AUDIO_VOL_UP: 0x00A9,
+  KC_AUDIO_VOL_DOWN: 0x00AA,
+  KC_MEDIA_NEXT_TRACK: 0x00AB,
+  KC_MEDIA_PREV_TRACK: 0x00AC,
+  KC_MEDIA_STOP: 0x00AD,
+  KC_MEDIA_PLAY_PAUSE: 0x00AE,
+  KC_MEDIA_SELECT: 0x00AF,
+  KC_MEDIA_EJECT: 0x00B0,  // 0xB0
+  KC_MAIL: 0x00B1,
+  KC_CALCULATOR: 0x00B2,
+  KC_MY_COMPUTER: 0x00B3,
+  KC_WWW_SEARCH: 0x00B5,
+  KC_WWW_HOME: 0x00B6,
+  KC_WWW_BACK: 0x00B7,
+  KC_WWW_FORWARD: 0x00B8,
+  KC_WWW_STOP: 0x00B9,
+  KC_WWW_REFRESH: 0x00BA,
+  KC_WWW_FAVORITES: 0x00BB,
+  KC_MEDIA_FAST_FORWARD: 0x00BC,
+  KC_MEDIA_REWIND: 0x00BD,
+  KC_BRIGHTNESS_UP: 0x00BE,
+  KC_BRIGHTNESS_DOWN: 0x00BF,
+
+/* Fn keys */
+  KC_FN0: 0x00C0, // 0xC0
+  KC_FN1: 0x00C1,
+  KC_FN2: 0x00C2,
+  KC_FN3: 0x00C3,
+  KC_FN4: 0x00C4,
+  KC_FN5: 0x00C5,
+  KC_FN6: 0x00C6,
+  KC_FN7: 0x00C7,
+  KC_FN8: 0x00C8,
+  KC_FN9: 0x00C9,
+  KC_FN10: 0x00CA,
+  KC_FN11: 0x00CB,
+  KC_FN12: 0x00CC,
+  KC_FN13: 0x00CD,
+  KC_FN14: 0x00CE,
+  KC_FN15: 0x00CF,
+  KC_FN16: 0x00D0,  // 0xD0
+  KC_FN17: 0x00D1,
+  KC_FN18: 0x00D2,
+  KC_FN19: 0x00D2,
+  KC_FN20: 0x00D3,
+  KC_FN21: 0x00D4,
+  KC_FN22: 0x00D5,
+  KC_FN23: 0x00D6,
+  KC_FN24: 0x00D7,
+  KC_FN25: 0x00D8,
+  KC_FN26: 0x00D9,
+  KC_FN27: 0x00DA,
+  KC_FN28: 0x00DB,
+  KC_FN29: 0x00DC,
+  KC_FN30: 0x00DD,
+  KC_FN31: 0x00DE,
+
+/* Mouse Buttons */
+  KC_MS_UP: 0x00F0, // 0xF0
+  KC_MS_DOWN: 0x00F1,
+  KC_MS_LEFT: 0x00F2,
+  KC_MS_RIGHT: 0x00F3,
+  KC_MS_BTN1: 0x00F4,
+  KC_MS_BTN2: 0x00F5,
+  KC_MS_BTN3: 0x00F6,
+  KC_MS_BTN4: 0x00F7,
+  KC_MS_BTN5: 0x00F8,
+
+/* Mouse Wheel */
+  KC_MS_WH_UP: 0x00F9,
+  KC_MS_WH_DOWN: 0x00FA,
+  KC_MS_WH_LEFT: 0x00FB,
+  KC_MS_WH_RIGHT: 0x00FC,
+
+/* Acceleration */
+  KC_MS_ACCEL0: 0x00FD,
+  KC_MS_ACCEL1: 0x00FE,
+  KC_MS_ACCEL2: 0x00FF
+};
+
+export const qmkKeycodes = {
+  // Ranges used in shortcuts - not to be used directly
+  QK_BASIC: 0x0000,
+  QK_BASIC_MAX: 0x00FF,
+  QK_MODS: 0x0100,
+  QK_LCTL: 0x0100,
+  QK_LSFT: 0x0200,
+  QK_LALT: 0x0400,
+  QK_LGUI: 0x0800,
+  QK_RMODS_MIN: 0x1000,
+  QK_RCTL: 0x1100,
+  QK_RSFT: 0x1200,
+  QK_RALT: 0x1400,
+  QK_RGUI: 0x1800,
+  QK_MODS_MAX: 0x1FFF,
+  QK_FUNCTION: 0x2000,
+  QK_FUNCTION_MAX: 0x2FFF,
+  QK_MACRO: 0x3000,
+  QK_MACRO_MAX: 0x3FFF,
+  QK_LAYER_TAP: 0x4000,
+  QK_LAYER_TAP_MAX: 0x4FFF,
+  QK_TO: 0x5000,
+  QK_TO_MAX: 0x50FF,
+  QK_MOMENTARY: 0x5100,
+  QK_MOMENTARY_MAX: 0x51FF,
+  QK_DEF_LAYER: 0x5200,
+  QK_DEF_LAYER_MAX: 0x52FF,
+  QK_TOGGLE_LAYER: 0x5300,
+  QK_TOGGLE_LAYER_MAX: 0x53FF,
+  QK_ONE_SHOT_LAYER: 0x5400,
+  QK_ONE_SHOT_LAYER_MAX: 0x54FF,
+  QK_ONE_SHOT_MOD: 0x5500,
+  QK_ONE_SHOT_MOD_MAX: 0x55FF,
+  QK_TAP_DANCE: 0x5700,
+  QK_TAP_DANCE_MAX: 0x57FF,
+  QK_LAYER_TAP_TOGGLE: 0x5800,
+  QK_LAYER_TAP_TOGGLE_MAX: 0x58FF,
+  QK_LAYER_MOD: 0x5900,
+  QK_LAYER_MOD_MAX: 0x59FF,
+
+//STENO_ENABLE
+  QK_STENO: 0x5A00,
+  QK_STENO_BOLT: 0x5A30,
+  QK_STENO_GEMINI: 0x5A31,
+  QK_STENO_MAX: 0x5A3F,
+
+//SWAP_HANDS_ENABLE
+  QK_SWAP_HANDS: 0x5B00,
+  QK_SWAP_HANDS_MAX: 0x5BFF,
+
+  QK_MOD_TAP: 0x6000,
+  QK_MOD_TAP_MAX: 0x7FFF,
+
+//UNICODE_ENABLE
+  QK_UNICODE: 0x8000,
+  QK_UNICODE_MAX: 0xFFFF,
+
+//UNICODEMAP_ENABLE
+  QK_UNICODEMAP: 0x8000,
+  QK_UNICODEMAP_MAX: 0xBFFF,
+  QK_UNICODEMAP_PAIR: 0xC000,
+  QK_UNICODEMAP_PAIR_MAX: 0xFFFF,
+
+  // Loose keycodes - to be used directly
+  RESET: 0x5C00,
+  DEBUG: 0x5C01,
+  MAGIC_SWAP_CONTROL_CAPSLOCK: 0x5C02,
+  MAGIC_CAPSLOCK_TO_CONTROL: 0x5C03,
+  MAGIC_SWAP_LALT_LGUI: 0x5C04,
+  MAGIC_SWAP_RALT_RGUI: 0x5C05,
+  MAGIC_NO_GUI: 0x5C06,
+  MAGIC_SWAP_GRAVE_ESC: 0x5C07,
+  MAGIC_SWAP_BACKSLASH_BACKSPACE: 0x5C08,
+  MAGIC_HOST_NKRO: 0x5C09,
+  MAGIC_SWAP_ALT_GUI: 0x5C0A,
+  MAGIC_UNSWAP_CONTROL_CAPSLOCK: 0x5C0B,
+  MAGIC_UNCAPSLOCK_TO_CONTROL: 0x5C0C,
+  MAGIC_UNSWAP_LALT_LGUI: 0x5C0D,
+  MAGIC_UNSWAP_RALT_RGUI: 0x5C0E,
+  MAGIC_UNNO_GUI: 0x5C0F,
+  MAGIC_UNSWAP_GRAVE_ESC: 0x5C10,
+  MAGIC_UNSWAP_BACKSLASH_BACKSPACE: 0x5C11,
+  MAGIC_UNHOST_NKRO: 0x5C12,
+  MAGIC_UNSWAP_ALT_GUI: 0x5C13,
+  MAGIC_TOGGLE_NKRO: 0x5C14,
+  MAGIC_TOGGLE_ALT_GUI: 0x5C15,
+  GRAVE_ESC: 0x5C16,
+
+// Leader key
+//LEADER_ENABLE
+//  KC_LEAD: 0x5C17,
+
+  // Auto Shift setup
+  KC_ASUP: 0x5C17,
+  KC_ASDN: 0x5C18,
+  KC_ASRP: 0x5C19,
+  KC_ASTG: 0x5C1A,
+  KC_ASON: 0x5C1B,
+  KC_ASOFF: 0x5C1C,
+
+  // Audio on/off/toggle
+  AU_ON: 0x5C1D,
+  AU_OFF: 0x5C1E,
+  AU_TOG: 0x5C1F,
+
+  // Faux clicky as part of main audio feature
+  CLICKY_TOGGLE: 0x5C20,
+  CLICKY_ENABLE: 0x5C21,
+  CLICKY_DISABLE: 0x5C22,
+  CLICKY_UP: 0x5C23,
+  CLICKY_DOWN: 0x5C24,
+  CLICKY_RESET: 0x5C25,
+
+//#ifdef FAUXCLICKY_ENABLE
+  // Faux clicky
+//  FC_ON,
+//  FC_OFF,
+//  FC_TOG,
+//#endif
+
+  // Music mode on/off/toggle
+  MU_ON: 0x5C26,
+  MU_OFF: 0x5C27,
+  MU_TOG: 0x5C28,
+
+  // Music mode cycle
+  MU_MOD: 0x5C29,
+
+  // Music voice iterate
+  MUV_IN: 0x5C2A,
+  MUV_DE: 0x5C2B,
+
+// Midi
+/*#if !MIDI_ENABLE_STRICT || (defined(MIDI_ENABLE) && defined(MIDI_BASIC))
+  MI_ON,
+  MI_OFF,
+  MI_TOG,
+#endif
+
+#if !MIDI_ENABLE_STRICT || (defined(MIDI_ENABLE) && defined(MIDI_ADVANCED))
+  MIDI_TONE_MIN,
+
+#    if !MIDI_ENABLE_STRICT || MIDI_TONE_KEYCODE_OCTAVES > 0
+  MI_C = MIDI_TONE_MIN,
+  MI_Cs,
+  MI_Db = MI_Cs,
+  MI_D,
+  MI_Ds,
+  MI_Eb = MI_Ds,
+  MI_E,
+  MI_F,
+  MI_Fs,
+  MI_Gb = MI_Fs,
+  MI_G,
+  MI_Gs,
+  MI_Ab = MI_Gs,
+  MI_A,
+  MI_As,
+  MI_Bb = MI_As,
+  MI_B,
+#    endif
+
+#    if !MIDI_ENABLE_STRICT || MIDI_TONE_KEYCODE_OCTAVES > 1
+  MI_C_1,
+  MI_Cs_1,
+  MI_Db_1 = MI_Cs_1,
+  MI_D_1,
+  MI_Ds_1,
+  MI_Eb_1 = MI_Ds_1,
+  MI_E_1,
+  MI_F_1,
+  MI_Fs_1,
+  MI_Gb_1 = MI_Fs_1,
+  MI_G_1,
+  MI_Gs_1,
+  MI_Ab_1 = MI_Gs_1,
+  MI_A_1,
+  MI_As_1,
+  MI_Bb_1 = MI_As_1,
+  MI_B_1,
+#    endif
+
+#    if !MIDI_ENABLE_STRICT || MIDI_TONE_KEYCODE_OCTAVES > 2
+  MI_C_2,
+  MI_Cs_2,
+  MI_Db_2 = MI_Cs_2,
+  MI_D_2,
+  MI_Ds_2,
+  MI_Eb_2 = MI_Ds_2,
+  MI_E_2,
+  MI_F_2,
+  MI_Fs_2,
+  MI_Gb_2 = MI_Fs_2,
+  MI_G_2,
+  MI_Gs_2,
+  MI_Ab_2 = MI_Gs_2,
+  MI_A_2,
+  MI_As_2,
+  MI_Bb_2 = MI_As_2,
+  MI_B_2,
+#    endif
+
+#    if !MIDI_ENABLE_STRICT || MIDI_TONE_KEYCODE_OCTAVES > 3
+  MI_C_3,
+  MI_Cs_3,
+  MI_Db_3 = MI_Cs_3,
+  MI_D_3,
+  MI_Ds_3,
+  MI_Eb_3 = MI_Ds_3,
+  MI_E_3,
+  MI_F_3,
+  MI_Fs_3,
+  MI_Gb_3 = MI_Fs_3,
+  MI_G_3,
+  MI_Gs_3,
+  MI_Ab_3 = MI_Gs_3,
+  MI_A_3,
+  MI_As_3,
+  MI_Bb_3 = MI_As_3,
+  MI_B_3,
+#    endif
+
+#    if !MIDI_ENABLE_STRICT || MIDI_TONE_KEYCODE_OCTAVES > 4
+  MI_C_4,
+  MI_Cs_4,
+  MI_Db_4 = MI_Cs_4,
+  MI_D_4,
+  MI_Ds_4,
+  MI_Eb_4 = MI_Ds_4,
+  MI_E_4,
+  MI_F_4,
+  MI_Fs_4,
+  MI_Gb_4 = MI_Fs_4,
+  MI_G_4,
+  MI_Gs_4,
+  MI_Ab_4 = MI_Gs_4,
+  MI_A_4,
+  MI_As_4,
+  MI_Bb_4 = MI_As_4,
+  MI_B_4,
+#    endif
+
+#    if !MIDI_ENABLE_STRICT || MIDI_TONE_KEYCODE_OCTAVES > 5
+  MI_C_5,
+  MI_Cs_5,
+  MI_Db_5 = MI_Cs_5,
+  MI_D_5,
+  MI_Ds_5,
+  MI_Eb_5 = MI_Ds_5,
+  MI_E_5,
+  MI_F_5,
+  MI_Fs_5,
+  MI_Gb_5 = MI_Fs_5,
+  MI_G_5,
+  MI_Gs_5,
+  MI_Ab_5 = MI_Gs_5,
+  MI_A_5,
+  MI_As_5,
+  MI_Bb_5 = MI_As_5,
+  MI_B_5,
+#    endif
+
+#    if !MIDI_ENABLE_STRICT || MIDI_TONE_KEYCODE_OCTAVES > 5
+  MIDI_TONE_MAX = MI_B_5,
+#    elif MIDI_TONE_KEYCODE_OCTAVES > 4
+  MIDI_TONE_MAX = MI_B_4,
+#    elif MIDI_TONE_KEYCODE_OCTAVES > 3
+  MIDI_TONE_MAX = MI_B_3,
+#    elif MIDI_TONE_KEYCODE_OCTAVES > 2
+  MIDI_TONE_MAX = MI_B_2,
+#    elif MIDI_TONE_KEYCODE_OCTAVES > 1
+  MIDI_TONE_MAX = MI_B_1,
+#    elif MIDI_TONE_KEYCODE_OCTAVES > 0
+  MIDI_TONE_MAX = MI_B,
+#    endif
+
+  MIDI_OCTAVE_MIN,
+  MI_OCT_N2 = MIDI_OCTAVE_MIN,
+  MI_OCT_N1,
+  MI_OCT_0,
+  MI_OCT_1,
+  MI_OCT_2,
+  MI_OCT_3,
+  MI_OCT_4,
+  MI_OCT_5,
+  MI_OCT_6,
+  MI_OCT_7,
+  MIDI_OCTAVE_MAX = MI_OCT_7,
+  MI_OCTD,  // octave down
+  MI_OCTU,  // octave up
+
+  MIDI_TRANSPOSE_MIN,
+  MI_TRNS_N6 = MIDI_TRANSPOSE_MIN,
+  MI_TRNS_N5,
+  MI_TRNS_N4,
+  MI_TRNS_N3,
+  MI_TRNS_N2,
+  MI_TRNS_N1,
+  MI_TRNS_0,
+  MI_TRNS_1,
+  MI_TRNS_2,
+  MI_TRNS_3,
+  MI_TRNS_4,
+  MI_TRNS_5,
+  MI_TRNS_6,
+  MIDI_TRANSPOSE_MAX = MI_TRNS_6,
+  MI_TRNSD,  // transpose down
+  MI_TRNSU,  // transpose up
+
+  MIDI_VELOCITY_MIN,
+  MI_VEL_1 = MIDI_VELOCITY_MIN,
+  MI_VEL_2,
+  MI_VEL_3,
+  MI_VEL_4,
+  MI_VEL_5,
+  MI_VEL_6,
+  MI_VEL_7,
+  MI_VEL_8,
+  MI_VEL_9,
+  MI_VEL_10,
+  MIDI_VELOCITY_MAX = MI_VEL_10,
+  MI_VELD,  // velocity down
+  MI_VELU,  // velocity up
+
+  MIDI_CHANNEL_MIN,
+  MI_CH1 = MIDI_CHANNEL_MIN,
+  MI_CH2,
+  MI_CH3,
+  MI_CH4,
+  MI_CH5,
+  MI_CH6,
+  MI_CH7,
+  MI_CH8,
+  MI_CH9,
+  MI_CH10,
+  MI_CH11,
+  MI_CH12,
+  MI_CH13,
+  MI_CH14,
+  MI_CH15,
+  MI_CH16,
+  MIDI_CHANNEL_MAX = MI_CH16,
+  MI_CHD,  // previous channel
+  MI_CHU,  // next channel
+
+  MI_ALLOFF,  // all notes off
+
+  MI_SUS,   // sustain
+  MI_PORT,  // portamento
+  MI_SOST,  // sostenuto
+  MI_SOFT,  // soft pedal
+  MI_LEG,   // legato
+
+  MI_MOD,    // modulation
+  MI_MODSD,  // decrease modulation speed
+  MI_MODSU,  // increase modulation speed
+
+  MI_BENDD,  // Bend down
+  MI_BENDU,  // Bend up
+#endif         // MIDI_ADVANCED
+*/
+  // Backlight functionality
+  BL_ON: 0x5C2C,
+  BL_OFF: 0x5C2D,
+  BL_DEC: 0x5C2E,
+  BL_INC: 0x5C2F,
+  BL_TOGG: 0x5C30,
+  BL_STEP: 0x5C31,
+  BL_BRTG: 0x5C32,
+
+  // RGB functionality
+  RGB_TOG: 0x5C33,
+  RGB_MODE_FORWARD: 0x5C34,
+  RGB_MODE_REVERSE: 0x5C35,
+  RGB_HUI: 0x5C36,
+  RGB_HUD: 0x5C37,
+  RGB_SAI: 0x5C38,
+  RGB_SAD: 0x5C39,
+  RGB_VAI: 0x5C3A,
+  RGB_VAD: 0x5C3B,
+  RGB_SPI: 0x5C3C,
+  RGB_SPD: 0x5C3D,
+  RGB_MODE_PLAIN: 0x5C3E,
+  RGB_MODE_BREATHE: 0x5C3F,
+  RGB_MODE_RAINBOW: 0x5C40,
+  RGB_MODE_SWIRL: 0x5C41,
+  RGB_MODE_SNAKE: 0x5C42,
+  RGB_MODE_KNIGHT: 0x5C43,
+  RGB_MODE_XMAS: 0x5C44,
+  RGB_MODE_GRADIENT: 0x5C45,
+  RGB_MODE_RGBTEST: 0x5C46,
+
+  // Momentum matching toggle
+  VLK_TOG: 0x5C47,
+
+  // Left shift, open paren
+  KC_LSPO: 0x5C48,
+
+  // Right shift, close paren
+  KC_RSPC: 0x5C49,
+
+  // Shift, Enter
+  KC_SFTENT: 0x5C4A,
+
+  // Printing
+  PRINT_ON: 0x5C4B,
+  PRINT_OFF: 0x5C4C,
+
+  // output selection
+  OUT_AUTO: 0x5C4D,
+  OUT_USB: 0x5C4E,
+/*#ifdef BLUETOOTH_ENABLE
+  OUT_BT,
+#endif*/
+
+/*#ifdef KEY_LOCK_ENABLE
+  KC_LOCK,
+#endif*/
+
+/*#ifdef TERMINAL_ENABLE
+  TERM_ON,
+  TERM_OFF,
+#endif*/
+
+  EEPROM_RESET: 0x5C4F,
+
+  UNICODE_MODE_FORWARD: 0x5C50,
+  UNICODE_MODE_REVERSE: 0x5C51,
+  UNICODE_MODE_MAC: 0x5C52,
+  UNICODE_MODE_LNX: 0x5C53,
+  UNICODE_MODE_WIN: 0x5C54,
+  UNICODE_MODE_BSD: 0x5C55,
+  UNICODE_MODE_WINC: 0x5C56,
+
+  HPT_ON: 0x5C57,
+  HPT_OFF: 0x5C58,
+  HPT_TOG: 0x5C59,
+  HPT_RST: 0x5C5A,
+  HPT_FBK: 0x5C5B,
+  HPT_BUZ: 0x5C5C,
+  HPT_MODI: 0x5C5D,
+  HPT_MODD: 0x5C5E,
+  HPT_CONT: 0x5C5F,
+  HPT_CONI: 0x5C60,
+  HPT_COND: 0x5C61,
+  HPT_DWLI: 0x5C62,
+  HPT_DWLD: 0x5C63,
+
+  // Left control, open paren
+  KC_LCPO: 0x5C64,
+
+  // Right control, close paren
+  KC_RCPC: 0x5C65,
+
+  // Left control, open paren
+  KC_LAPO: 0x5C66,
+
+  // Right control, close paren
+  KC_RAPC: 0x5C67,
+
+  CMB_ON: 0x5C68,
+  CMB_OFF: 0x5C69,
+  CMB_TOG: 0x5C6A,
+
+  MAGIC_SWAP_LCTL_LGUI: 0x5C6B,
+  MAGIC_SWAP_RCTL_RGUI: 0x5C6C,
+  MAGIC_UNSWAP_LCTL_LGUI: 0x5C6D,
+  MAGIC_UNSWAP_RCTL_RGUI: 0x5C6E,
+  MAGIC_SWAP_CTL_GUI: 0x5C6F,
+  MAGIC_UNSWAP_CTL_GUI: 0x5C70,
+  MAGIC_TOGGLE_CTL_GUI: 0x5C71,
+  MAGIC_EE_HANDS_LEFT: 0x5C72,
+  MAGIC_EE_HANDS_RIGHT: 0x5C73,
+
+  // Dynamic Macros
+  DYN_REC_START1: 0x5C74,
+  DYN_REC_START2: 0x5C75,
+  DYN_REC_STOP: 0x5C76,
+  DYN_MACRO_PLAY1: 0x5C77,
+  DYN_MACRO_PLAY2: 0x5C78,
+
+  // always leave at the end
+  SAFE_RANGE: 0x5C79
+};
