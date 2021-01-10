@@ -1,6 +1,6 @@
 {
   "keyboard": "pjf",
-  "keymap": "matrix_pjf_layout_default",
+  "keymap": "matrix_dev_pjf_layout_default",
   "layout": "LAYOUT_default",
   "layers": [
     [
@@ -107,7 +107,7 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
-      "PJF_MODE",
+      "KC_F24",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
