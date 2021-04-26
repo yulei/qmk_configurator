@@ -165,5 +165,11 @@ export default [
   { name: 'F21', code: 'KC_F21' },
   { name: 'F22', code: 'KC_F22' },
   { name: 'F23', code: 'KC_F23' },
-  { name: 'F24', code: 'KC_F24' }
+  { name: 'F24', code: 'KC_F24' },
+
+  { label: 'Locking Keys', width: 'label' },
+
+  { name: 'Lock Caps', code: 'KC_LCAP' },
+  { name: 'Lock Num', code: 'KC_LNUM' },
+  { name: 'Lock Scroll', code: 'KC_LSCR' }
 ];
